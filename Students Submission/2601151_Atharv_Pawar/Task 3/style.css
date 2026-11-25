@@ -1,23 +1,22 @@
-/* Global box sizing and default typography */
+/* Reset & Base */
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
     background-color: #fafbfe;
     color: #1e293b;
 }
 
-/* Header bar container */
+/* Header & Nav */
 .header {
     background-color: #ffffff;
     border-bottom: 1px solid #f1f5f9;
 }
 
-/* Navigation bar: flex layout with space-between */
 .nav {
     display: flex;
     align-items: center;
@@ -27,13 +26,13 @@ body {
     padding: 18px 40px;
 }
 
-/* Brand logo: plane icon angled like taking off */
 .logo {
     display: flex;
     align-items: center;
     gap: 12px;
 }
 
+/* Airplane icon rotated like take-off */
 .logo-icon {
     height: 26px;
     width: auto;
@@ -41,13 +40,11 @@ body {
 }
 
 .logo h2 {
-    margin: 0;
     font-size: 22px;
     font-weight: 800;
     color: #111827;
 }
 
-/* Navigation links */
 .nav-links {
     display: flex;
     align-items: center;
@@ -67,7 +64,7 @@ body {
     color: #6436c9;
 }
 
-/* Active tab indicator with purple underline */
+/* Underline indicator on active tab */
 .nav-links a.active {
     color: #6436c9;
     font-weight: 600;
@@ -84,7 +81,6 @@ body {
     border-radius: 4px;
 }
 
-/* Book now button in header */
 .btn-book {
     background-color: #6436c9;
     color: #ffffff;
@@ -101,7 +97,7 @@ body {
     background-color: #5227b6;
 }
 
-/* Hero section: sunset mountain background with text overlay */
+/* Hero Section with background banner */
 .hero {
     position: relative;
     background: linear-gradient(to right, rgba(15, 23, 42, 0.45) 0%, rgba(15, 23, 42, 0.25) 50%, rgba(15, 23, 42, 0.05) 100%), url('../../../Task 3/Assets/07.png') center/cover no-repeat;
@@ -123,7 +119,7 @@ body {
     font-size: 50px;
     font-weight: 800;
     line-height: 1.15;
-    margin: 0 0 18px 0;
+    margin-bottom: 18px;
     max-width: 580px;
 }
 
@@ -131,11 +127,10 @@ body {
     color: #f8fafc;
     font-size: 16px;
     line-height: 1.6;
-    margin: 0 0 32px 0;
+    margin-bottom: 32px;
     max-width: 480px;
 }
 
-/* Action buttons on hero section */
 .hero-buttons {
     display: flex;
     align-items: center;
@@ -174,7 +169,7 @@ body {
     background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Floating booking search card overlapping hero banner */
+/* Floating Search Box (negative margin pulls it over hero section) */
 .search-container {
     max-width: 1280px;
     margin: -45px auto 55px;
@@ -194,7 +189,6 @@ body {
     gap: 15px;
 }
 
-/* Single search input field */
 .search-item {
     display: flex;
     align-items: center;
@@ -210,19 +204,17 @@ body {
 }
 
 .search-text h4 {
-    margin: 0 0 4px 0;
     font-size: 14px;
     font-weight: 700;
     color: #0f172a;
+    margin-bottom: 4px;
 }
 
 .search-text p {
-    margin: 0;
     font-size: 13px;
     color: #64748b;
 }
 
-/* Vertical divider line between search options */
 .divider {
     width: 1px;
     height: 36px;
@@ -230,7 +222,6 @@ body {
     flex-shrink: 0;
 }
 
-/* Search button with magnifying glass */
 .btn-search {
     background-color: #6436c9;
     color: #ffffff;
@@ -257,14 +248,13 @@ body {
     background-color: #5227b6;
 }
 
-/* Popular destinations section */
+/* Popular Destinations */
 .destinations-section {
     max-width: 1280px;
     margin: 0 auto 60px;
     padding: 0 40px;
 }
 
-/* Section title with purple decorative lines */
 .section-title {
     display: flex;
     align-items: center;
@@ -281,19 +271,16 @@ body {
 }
 
 .section-title h2 {
-    margin: 0;
     font-size: 28px;
     font-weight: 800;
     color: #0f172a;
 }
 
-/* Grid holding the 3 destination cards */
 .destinations-grid {
     display: flex;
     gap: 24px;
 }
 
-/* Single destination card with background image */
 .destination-card {
     flex: 1;
     height: 270px;
@@ -307,7 +294,7 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* Gradient overlay so white text and price pill remain readable */
+/* Gradient overlay at bottom so text and price badge are readable */
 .card-overlay {
     width: 100%;
     padding: 20px;
@@ -318,13 +305,12 @@ body {
 }
 
 .card-info h3 {
-    margin: 0 0 6px 0;
+    margin-bottom: 6px;
     color: #ffffff;
     font-size: 20px;
     font-weight: 700;
 }
 
-/* Location pin and state name tag */
 .location-tag {
     display: flex;
     align-items: center;
@@ -340,7 +326,6 @@ body {
     object-fit: contain;
 }
 
-/* Price pill badge */
 .price-pill {
     background-color: #ffffff;
     color: #0f172a;
